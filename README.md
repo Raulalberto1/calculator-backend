@@ -13,8 +13,8 @@
 1. **Clone the repository:**
 
    ```sh
-   git clone https://github.com/your-repo/your-project.git
-   cd your-project/backend
+   git clone https://github.com/Raulalberto1/calculator-backend.git
+   cd your-project
 
 2. **Configure your database connection and other properties:**
 
