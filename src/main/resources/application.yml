@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: ${MYSQL_URL:jdbc:mysql://localhost:3308/exampledb}
+    username: ${MYSQL_USERNAME:root}
+    password: ${MYSQL_PASSWORD:admin}
+    driver-class-name: ${DATABASE_DRIVER:com.mysql.cj.jdbc.Driver}
+  jpa:
+    properties:
+      hibernate:
+        dialect: ${DATABASE_PLATFORM:org.hibernate.dialect.MySQL8Dialect}
+    hibernate:
+      ddl-auto: update
+  application:
+    name: calculator-backend
+server:
+  port: 8080
