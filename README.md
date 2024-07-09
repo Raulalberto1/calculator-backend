@@ -51,8 +51,9 @@
 1. **Clone the repository:**
 
    ```sh
-   git clone https://github.com/your-repo/your-project.git
-   cd your-project/backend
+   git clone https://github.com/Raulalberto1/calculator-backend.git
+
+   cd your-project
 
 2. **Create a docker-compose.yml file:**
    Ensure you have a docker-compose.yml file in the root directory with the     following content:

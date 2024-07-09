@@ -20,19 +20,6 @@ public class UserService {
 	@Autowired
 	private UserRepository userRepository;
 	
-
-	
-	/*public ResponseEntity<User> login(String username, String password) {
-		User user = userRepository.findByUsername(username).orElseThrow(() -> new UsernameNotFoundException("User not found"));
-		if(!user.getPassword().equals(password)) {
-			return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(null);
-		}
-		if(user.getStatus().equalsIgnoreCase(Constants.STATUS_INACTIVE)) {
-			return ResponseEntity.status(HttpStatus.FORBIDDEN).body(null);
-		}
-		return ResponseEntity.ok(user);
-	}*/
-	
 	public ResponseEntity<UserDataResponse> login(String username, String password) {
 		Optional<User> user = userRepository.findByUsername(username);
 		UserDataResponse userDataResponse=new UserDataResponse();
