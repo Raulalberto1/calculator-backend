@@ -2,7 +2,7 @@
 FROM openjdk:17
 
 # COPY src ./src
-RUN mvn package -DskipTests
+#RUN mvn package -DskipTests
 
 # Copy the JAR package into the image
 ARG JAR_FILE=target/*.jar
